@@ -28,7 +28,12 @@ include_once "Constantes.php"; // inclut le fichier constantes
     return $connexion;
 }
 
-ConnexionServ();
+//fonction deconnexion
+function DecoServ()
+{
+	$dsn = null;
+}
+
 
 
 
