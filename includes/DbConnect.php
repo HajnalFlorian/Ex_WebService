@@ -1,38 +1,20 @@
 <?php 
-include_once "Constantes.php"; // inclut le fichier constantes
+//include des fichier
+include_once("Constantes.php"); 
+include_once("DbOperations.php");
+include_once("Client.php"); 
 
-//fonction de connexion
- function ConnexionServ()
- {
-	            
-    //script de connexion 
-    $dsn=SERVEUR.";dbname=".BASE;
 
-    echo $dsn;
-            
-    //connexion à la base de données
-    try
-    {
-        $connexion=new PDO($dsn,USER,MDP);
-        $connexion->exec("set names utf8");
-    }
-            
-   	//affichage en cas d'erreur
-    catch(PDOExecption $e)
-    {
-        printf("Echec de la connexion : %s\n", $e->getMessage());
-        exit();
-    }
-            
-    //retourne de la connexion
-    return $connexion;
-}
-
-//fonction deconnexion
-function DecoServ()
+try
 {
-	$dsn = null;
+    // Connexion à la DB avec les constantes de Constantes.php
+    $connec = mysqli_connect(SERVEUR, USER, MDP, DB);
+    $connec_post = new mysqli(SERVEUR, USER, MDP, DB);
 }
+catch(Exception $e)
+{
+    var_dump($e->getMessage());  // Envoie du message d'erreur
+}   
 
 
 

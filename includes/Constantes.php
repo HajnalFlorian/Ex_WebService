@@ -1,7 +1,9 @@
 <?php
-define("SERVEUR", "mysql:host=localhost");
-define('BASE', 'clicom_light');
+
+
+define('SERVEUR', 'localhost');
+define('USER', 'root');
 define('MDP', '');
-define("USER", "root");
+define('DB', 'clicom_light');
 
  ?>

@@ -1,0 +1,22 @@
+table {
+ border-collapse:collapse;
+ width:90%;
+ }
+th, td {
+ border:1px solid black;
+ width:20%;
+ }
+td {
+ text-align:center;
+ }
+caption {
+ font-weight:bold
+ }
+
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+    background: red;
+}

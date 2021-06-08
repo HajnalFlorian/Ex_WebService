@@ -1,6 +1,6 @@
-DROP DATABASE clicom_light;
-CREATE DATABASE clicom_light;
 
+CREATE DATABASE clicom_light;
+DROP DATABASE clicom_light;
 CREATE TABLE CLIENT(
     NCLI varchar(4) not null primary key,
     NOM varchar(40) not null,
